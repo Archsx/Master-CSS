@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 300px;
+        height: 300px;
+        background-color: skyblue;
+        display: grid;
+        grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4];
+        grid-template-rows: [row1] 1fr [row2] 1fr [row3] 1fr [row4];
+      }
+      .main div:nth-of-type(1) {
+        background-color: pink;
+        grid-area:  1 / 2 / 2 / 3;
+        /* grid-column: 2 / 3; */
+        /* grid-column-start: 2;
+        grid-column-end: 3; */
+        /* 默认值 auto 后续的方块自动适应到此方块后面
+        若指定了值，那么后续方块自动填充 那么可能排在前面
+        grid-row-start: 2;
+        grid-row-end: 4; */
+      }
+      .main div:nth-of-type(2) {
+        background-color: gray;
+        grid-row-start: row2;
+        grid-row-end: row3;
+        grid-column-start: 2;
+        grid-column-end: span 2;
+      }
+      .main div:nth-of-type(3) {
+        background-color: greenyellow;
+        grid-area: 3 / 2 / 4 / 3;
+        width: 50px;
+        height: 50px;
+        justify-self: center ;
+        align-self: center ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

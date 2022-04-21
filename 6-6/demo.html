@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./iconfont/iconfont.css" />
+    <style>
+      html {
+        font-size: 26.66667vw;
+      }
+      body {
+        font-size: 16px;
+      }
+      .head {
+        height: 43px;
+        background-color: #ef1b1a;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+      }
+      .head-user,
+      .head-email {
+        width: 25%;
+        font-size: 14px;
+      }
+      .head-logo {
+        width: 50%;
+      }
+      .head-email {
+        text-align: right;
+      }
+      .head-logo {
+        width: 50%;
+        text-align: center;
+      }
+      .head i {
+        font-size: 18px;
+      }
+      .head-logo img {
+        height: 21px;
+      }
+
+      .nav {
+        height: 46px;
+        border-bottom: 0.5px #ededed solid;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+      }
+      .nav li {
+        flex-grow: 1;
+        text-align: center;
+        position: relative;
+      }
+
+      .nav li.active a {
+        color: #ef191b;
+      }
+      .nav li.active::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        background-color: #ef191b;
+        left: 50%;
+        margin-left: -7.5px;
+        bottom: -12px;
+      }
+      .nav-sub {
+        padding: 11px 10px 7px 10px;
+        background-color: #f8f8f8;
+        position: relative;
+      }
+
+      .nav-sub__closed {
+        height: 70px;
+        overflow: hidden;
+      }
+
+      .nav-sub-list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: 35px;
+      }
+
+      .nav-sub__closed + .nav-sub-arrow {
+        transform: rotate(0);
+      }
+
+      .nav-sub-arrow {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        transform: rotate(180deg);
+      }
+
+
+      .news-title {
+        font-size: 18px;
+        line-height: 66px;
+      }
+      .news-item {
+
+      }
+      .news-item-title {
+        line-height: 22px;
+        font-size: 17px;
+      }
+      .news-item-info {
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div class="head-user">
+        <i class="iconfont icon-yonghu"></i>
+      </div>
+      <div class="head-logo">
+        <img src="./img/logo.png" alt="" />
+      </div>
+      <div class="head-email">
+        <i class="iconfont icon-youxiang"></i>
+        邮箱
+        <i class="iconfont icon-jiantou"></i>
+      </div>
+    </div>
+    <ul class="nav">
+      <li class="active">
+        <a href="">要闻</a>
+      </li>
+      <li>
+        <a href="">推荐</a>
+      </li>
+      <li>
+        <a href="">原创</a>
+      </li>
+      <li>
+        <a href="">热点</a>
+      </li>
+    </ul>
+    <div class="nav-sub">
+      <ul class="nav-sub-list nav-sub__closed">
+        <li>
+          <a href="">新闻</a>
+        </li>
+        <li>
+          <a href="">抗疫</a>
+        </li>
+        <li>
+          <a href="">娱乐</a>
+        </li>
+        <li>
+          <a href="">体育</a>
+        </li>
+        <li>
+          <a href="">财经</a>
+        </li>
+        <li>
+          <a href="">新闻</a>
+        </li>
+        <li>
+          <a href="">抗疫</a>
+        </li>
+        <li>
+          <a href="">娱乐</a>
+        </li>
+        <li>
+          <a href="">体育</a>
+        </li>
+        <li>
+          <a href="">财经</a>
+        </li>
+        <li>
+          <a href="">新闻</a>
+        </li>
+        <li>
+          <a href="">抗疫</a>
+        </li>
+        <li>
+          <a href="">娱乐</a>
+        </li>
+        <li>
+          <a href="">体育</a>
+        </li>
+        <li>
+          <a href="">财经</a>
+        </li>
+      </ul>
+      <div class="nav-sub-arrow">
+        <i class="iconfont icon-down-arrow"></i>
+      </div>
+    </div>
+    <div class="news">
+      <h2 class="news-title">今日要闻</h2>
+      <div class="news-item">
+        <h3 class="news-item-title">测试标题</h3>
+        <p class="news-item-info">测试内容 1小时前 879跟帖</p>
+      </div>
+      <div class="news-item">
+        <h3 class="news-item-title">测试标题</h3>
+        <p class="news-item-info">测试内容 1小时前 879跟帖</p>
+      </div>
+      <div class="news-item">
+        <h3 class="news-item-title">测试标题可以很长很长很长很长很长</h3>
+        <div class="news-item-img">
+          <img src="./img/news.jpg" alt="">
+        </div>
+        <p class="news-item-info">测试内容 1小时前 879跟帖</p>
+      </div>
+    </div>
+  </body>
+</html>

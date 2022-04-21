@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 16px;
+      }
+
+      html {
+        /* font-size: 100vw; iphone 6 -> 375px */
+        font-size: 26.666667vw; /*iphone 6 -> 100px*/
+        /* 100vw   ? = 26.666667vw
+      ----- = -----
+      375px   100px */
+        /* 此时一个rem的大小就是26.666667vw,在iphone6下就是100px */
+        /* 这样方便我们计算 */
+      }
+      .box {
+        width: 1rem;
+        height: 1rem;
+        background-color: pink;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

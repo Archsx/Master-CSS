@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main {
+      height: 100vh;
+      background-color: skyblue;
+    }
+
+
+    .col1 {
+      width: 200px;
+      height: 100%;
+      float: left;
+      background-color: pink;
+    }
+
+    .col2{
+      height: 100%;
+      /* 防止col1和col2叠加在一起，使用overflow:hidden形成BFC或者使用margin-left */
+      /* margin-left: 200px; */
+      overflow: hidden;
+      background-color: aqua;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="col1"></div>
+    <div class="col2"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        /* display: grid; */
+        /* width: 300px; */
+        display: inline-grid;
+        height: 300px;
+        background-color: skyblue;
+        /* grid-template-columns: 100px 100px 100px; */
+        /* grid-template-rows: 100px; */
+        /* background-color: skyblue; */
+        /* 默认:row 就是行产生隐式网格 这是默认值 */
+        /* grid-auto-flow: row; */
+        /* 可以调节产生隐式网格的高度 */
+        /* grid-auto-rows: 200px; */
+        grid-template-columns: 100px;
+        grid-template-rows: 100px 100px 100px;
+        /* column是列产生隐式网格 */
+        grid-auto-flow: column;
+        /* 可以调节隐式网格的宽度 */
+        grid-auto-columns: 100px;
+        /* grid-auto-columns: ; */
+      }
+      .main div {
+        box-sizing: border-box;
+        border: 1px solid black;
+        background-color: pink;
+      }
+
+      .main2 {
+        width: 300px;
+        height: 300px;
+        background-color: skyblue;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px;
+        grid-auto-flow: row dense;/*紧密的*/
+        grid-auto-rows: 100px;
+      }
+
+      .main2 div {
+        background-color: pink;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .main2 div:nth-of-type(1) {
+        grid-column-start: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+    <div class="main2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </body>
+</html>

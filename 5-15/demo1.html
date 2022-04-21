@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: grid;
+        grid-template-rows: 100px 300px 100px;
+        grid-template-columns: 100px 1fr 100px;
+        gap: 10px;
+        background-color: skyblue;
+      }
+      .main > div {
+        background-color: pink;
+      }
+      .main > div:first-of-type {
+        grid-area: 1 / 1 / span 1 / span 3;
+      }
+      .main > div:last-of-type {
+        grid-area: 3 / 1 / span 1 / span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>Header</div>
+      <div>left</div>
+      <div>content</div>
+      <div>right</div>
+      <div>Footer</div>
+    </div>
+  </body>
+</html>

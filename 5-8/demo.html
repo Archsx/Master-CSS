@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        display: grid;
+        height: 400px;
+        background-color: skyblue;
+        /* grid-template-columns: 100px 100px 100px; */
+        /* grid-template-columns: repeat(3, 100px); */
+        /* grid-template-columns: 150px repeat(2,100px); */
+        /* 前面这些都是固定值，表示固定网格的多少，这里的auto-fill会根据容器的大小自动分配网格的多少 */
+        grid-template-columns: repeat(auto-fill, 100px);
+        grid-template-rows: 100px;
+      }
+      .main div {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

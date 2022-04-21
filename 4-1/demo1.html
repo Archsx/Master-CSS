@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 500px;
+        /* 父容器是否设置高度会对折行的效果产生影响 */
+        /* height: 500px; */
+        background-color: skyblue;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* flex-direction: row-reverse; */
+        flex-wrap: wrap;
+      }
+      .main div {
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

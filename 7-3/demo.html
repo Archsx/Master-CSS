@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+      }
+
+      /* min-width方式，移动优先原则，先编写移动端设备，然后响应式过度到PC端 */
+      @media (min-width: 700px) {
+        .box {
+          background-color: pink;
+        }
+      }
+      @media (min-width: 1000px) {
+        .box {
+          background-color: green;
+        }
+      }
+
+      /* 从PC端过度到移动端，max-width,从大到小编写 */
+
+      @media (max-width: 2000px) {
+        /*  */
+      }
+
+      @media (max-width: 1500px) {
+        /*  */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <li>添加到样式表的底部，以实现对CSS进行优先级覆盖</li>
+        <li>移动端 -> PC端，min-width 从小到大</li>
+        <li>PC端 -> 移动端 max-width从大到小</li>
+      </ul>
+    </div>
+  </body>
+</html>

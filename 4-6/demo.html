@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .box {
+        width: 300px;
+        height: 200px;
+        background-color: skyblue;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+      } */
+      /* .box {
+        width: 300px;
+        height: 200px;
+        background-color: skyblue;
+        display: table-cell;
+        vertical-align: middle;
+      } */
+      /* .box {
+        width: 300px;
+        height: 200px;
+        background-color: skyblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      } */
+      /* div.box {
+        width: 300px;
+        height: 200px;
+        background-color: skyblue;
+        position: relative;
+      }
+
+      div.box div {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      } */
+
+      /* 如何使margin:auto生效 */
+      /* 方法1 父容器指定为display:relative,子元素指定为display:absolute 
+      并且将 left,right,top,bottom 指定为0 */
+
+      /* .box {
+        width: 300px;
+        height: 200px;
+        background-color: skyblue;
+        position: relative;
+      } */
+
+      /* 原来指定了宽高，也可以将left,right,top,bottom指定为0啊 */
+      /* 我还以为把这四个指定为0代表着充满父容器呢 */
+      /* .box div {
+        width: 200px;
+        height: 50px;
+        background-color: pink;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      } */
+
+      /* 使用margin:auto实现水平和垂直方向居中的方法2
+      为父容器添加display:flex */
+      div.box {
+        width: 300px;
+        height: 200px;
+        background-color: skyblue;
+        display: flex;
+      }
+      div.box div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">
+      文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字
+    </div> -->
+    <div class="box">
+      <div></div>
+    </div>
+  </body>
+</html>

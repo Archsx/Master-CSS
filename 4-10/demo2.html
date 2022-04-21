@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        width: 500px;
+        height: 300px;
+        background-color: skyblue;
+        display: flex;
+      }
+
+      .main div:nth-of-type(1) {
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+        flex-grow: 0.1;
+      }
+
+      .main div:nth-of-type(2) {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        flex-grow: 0.2;
+      }
+
+      /* 总共大小500px 剩余空间200px 
+    一个是0.1,一个是0.2
+    难道以2比1的比例来划分这200px?
+    错了
+    答案是将200px分成10份
+    所以第一个宽度为220px
+    第二个宽度为140px */
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 使用link标签进行 -->
+    <link rel="stylesheet" href="./a.css" media="(orientation:portrait)" />
+    <link rel="stylesheet" href="./b.css" media="(orientation:landscape)" />
+    <title>Document</title>
+    <style>
+      /* @media screen {
+      .box {
+        font-size: 60px;
+      }
+    } */
+      /* 最小700px */
+      /* @media (min-width: 700px) {
+        .box {
+          width: 200px;
+          height: 200px;
+          background-color: pink;
+        }
+      } */
+      /* 竖屏 */
+      /* @media (orientation: portrait) {
+        .box {
+          width: 200px;
+          height: 200px;
+          background-color: pink;
+        }
+      } */
+      /* 横屏 */
+      /* @media (orientation: landscape) {
+        .box {
+          width: 200px;
+          height: 200px;
+          background-color: skyblue;
+        }
+      } */
+
+      /*  媒体类型为屏幕   媒体特性为宽度在700到1200这个区间生效 */
+      /* @media screen and (min-width: 700px) and (max-width: 1200px) {
+        .box {
+          width: 200px;
+          height: 200px;
+          background-color: pink;
+        }
+      } */
+      /* 小于700才生效 */
+      /* @media not screen and (min-width: 700px) {
+        .box {
+          width: 200px;
+          height: 200px;
+          background-color: pink;
+        }
+      } */
+      /* 屏幕和打印模式都支持 */
+      /* @media screen, print and (min-width: 700px) {
+        .box {
+          width: 200px;
+          height: 200px;
+          background-color: pink;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box">aaaaaaaaaaa</div>
+  </body>
+</html>
